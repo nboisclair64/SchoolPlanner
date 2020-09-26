@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>School Planner</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>School Planner</h1>
+    <table>
+        <tr>
+            <th>Days of the Week</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+    </table>
+
+    <form actions="/" name="content" id="content">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Class">
+    </form>
+</div>
+{% endblock %}
